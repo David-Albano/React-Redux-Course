@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProfileCard({altImg, image, title, handle}) {
+function ProfileCard({altImg, image, title, handle, description}) {
     return (
         <div className='card'>
             <div className='card-image'>
@@ -14,6 +14,10 @@ function ProfileCard({altImg, image, title, handle}) {
                     <p className='title is-4'>{title}</p>
                     <p className='subtitle is-6'>{handle}</p>
                 </div>
+            </div>
+
+            <div className='card-content'>
+                <p className='media-content'>{description}</p>
             </div>
         </div>
     )
