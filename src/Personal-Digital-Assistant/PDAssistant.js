@@ -8,15 +8,27 @@ function PDAssistant() {
 
 
     return (
-        <>
+        <div>
             <div>Personal Digital Assistants</div>
-            <br/>
-            <div>
-                <ProfileCard image={AlexaImage} title='Alexa' handle='@alexa99' altImg='Alexa Logo' />
-                <ProfileCard image={SiriImage} title='Siri' handle='@Siri' altImg='Siri Logo' />
-                <ProfileCard image={CortanaImage} title='Cortana' handle='@Cortana' altImg='Cortana Logo' />
+            
+            <div className='container'>
+                <section className='section'>
+                    <div className='columns'>
+                        <div className='column is-4'>
+                            <ProfileCard image={AlexaImage} title='Alexa' handle='@alexa99' altImg='Alexa Logo' />
+                        </div>
+                        
+                        <div className='column is-4'>
+                            <ProfileCard image={SiriImage} title='Siri' handle='@Siri' altImg='Siri Logo' />
+                        </div>
+
+                        <div className='column is-4'>
+                            <ProfileCard image={CortanaImage} title='Cortana' handle='@Cortana' altImg='Cortana Logo' />
+                        </div>
+                    </div>
+                </section>
             </div>
-        </>
+        </div>
     )
 }
 
