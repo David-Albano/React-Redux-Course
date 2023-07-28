@@ -1,7 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 import Practice from "./Practice1/Practice"
 import PDAssistant from './Personal-Digital-Assistant/PDAssistant'
-import ProfileCard from './Personal-Digital-Assistant/ProfileCard'
 
 function App() {
     return (

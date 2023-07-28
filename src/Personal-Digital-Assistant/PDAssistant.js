@@ -11,10 +11,10 @@ function PDAssistant() {
         <>
             <div>Personal Digital Assistants</div>
             <br/>
-            <div style={{display: 'flex', gap:'1rem'}}>
-                <ProfileCard img={AlexaImage} title='Alexa' handle='@alexa99' />
-                <ProfileCard img={CortanaImage} title='Siri' handle='@Siri' />
-                <ProfileCard img={SiriImage} title='Cortana' handle='@Cortana' />
+            <div>
+                <ProfileCard image={AlexaImage} title='Alexa' handle='@alexa99' altImg='Alexa Logo' />
+                <ProfileCard image={SiriImage} title='Siri' handle='@Siri' altImg='Siri Logo' />
+                <ProfileCard image={CortanaImage} title='Cortana' handle='@Cortana' altImg='Cortana Logo' />
             </div>
         </>
     )
