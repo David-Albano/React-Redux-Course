@@ -17,7 +17,7 @@ function Animals() {
     return (
         <div>
             <button onClick={handleClick} >Add Animal</button>
-            { animals.map((animal, index) => <ShowAnimal key={index} type= {animal} />) }
+            { animals.map((animal, index) => <ShowAnimal key={index} type = {animal} />) }
         </div>
     )
 }
