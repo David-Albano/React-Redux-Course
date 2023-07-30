@@ -1,20 +1,25 @@
 import React, {useState} from 'react'
 import ShowAnimal from './ShowAnimal'
 
-function Animals() {
-    const [count, setCount] = useState(0)
+function getRandomAnimal() {
+    const animals = ['bird', 'cat', 'cow', 'dog', 'alligator', 'horse']
 
+    return animals[Math.floor(Math.random() * animals.length)]
+}
+
+function Animals() {
+    const [animals, setAnimals] = useState([])
 
     const handleClick = () => {
-        setCount(count + 1)
+        setAnimals([...animals, getRandomAnimal()])
     }
 
+    console.log(animals)
+
     return (
-        <>
-            <button  onClick={handleClick} >Add Animal</button>
-            <div>Number of animals: {count}</div>
-            <div><ShowAnimal type='horse' /></div>
-        </>
+        <div>
+            <button onClick={handleClick} >Add Animal</button>
+        </div>
     )
 }
 
