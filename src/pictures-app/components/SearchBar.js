@@ -12,7 +12,7 @@ function SearchBar({onSubmit}) {
     return (
         <div>
             <form onSubmit={handlerSubmit}>
-                <input type='search' onChange={(e) => setTerm(e.target.value)} />
+                <input value={term} type='search' onChange={(e) => setTerm(e.target.value)} />
                 <button type='submit'>Search</button>
             </form>
         </div>

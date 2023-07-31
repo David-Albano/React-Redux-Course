@@ -6,9 +6,12 @@ function ImageShow({image}) {
             <div style={{
                 width: '12rem',
                 height: '12rem',
-                border: '2px solid red'
+                border: '2px solid red',
+                overflow: 'hidden',
+                textAlign: 'center',
             }}>
-                {image}
+                <h3>{image.alt_description}</h3>
+                <img style={{maxWidth: '100%', maxHeight: '100%',}} src={image.urls.full} />
             </div>
         </>
     )
