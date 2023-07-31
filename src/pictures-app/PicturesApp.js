@@ -8,6 +8,7 @@ function PicturesApp() {
 
     const handleSubmit = async (term) => {
         const imgResults = await searchImages(term)
+        console.log('imgResults: ', imgResults)
         setImagesList(imgResults)
     }
 
