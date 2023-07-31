@@ -2,6 +2,7 @@ import {Routes, Route} from 'react-router-dom'
 import Practice from "./Practice1/Practice"
 import PDAssistant from './Personal-Digital-Assistant/PDAssistant'
 import Animals from './animals/Animals'
+import PicturesApp from './pictures-app/PicturesApp'
 import 'bulma/css/bulma.css'
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
 
                 {/* App 3 */}
                 <Route path='/animals' element={<Animals/>}/>
+
+                {/* App 4 */}
+                <Route path='/pictures' element={<PicturesApp/>}/>
 
             </Routes>
         </>
