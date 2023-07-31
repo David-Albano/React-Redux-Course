@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const pics = {
 
@@ -12,11 +12,20 @@ const pics = {
 }
 
 function ShowAnimal({type}) {
+    const [heartSize, setHeartSize] = useState(0)
+
     return (
         <>
             <div>{type}</div>
-            <div>
-                <img src={pics[type]} />
+            <div onClick={() => setHeartSize(heartSize + 2) }>
+                <img src={pics[type]} style={{maxWidth: '10rem', maxHeight: '10rem'}} />
+                <img src={pics['heart']}
+                    style={{
+                        width: `${heartSize}rem`,
+                        height: `${heartSize}rem`,
+                        maxWidth: `8rem`,
+                        maxHeight: `8rem`,
+                    }} />
             </div>
         </>
     )
