@@ -1,8 +1,16 @@
 import React from 'react'
 
-function ImageShow() {
+function ImageShow({image}) {
     return (
-        <div>ImageShow</div>
+        <>
+            <div style={{
+                width: '12rem',
+                height: '12rem',
+                border: '2px solid red'
+            }}>
+                {image}
+            </div>
+        </>
     )
 }
 

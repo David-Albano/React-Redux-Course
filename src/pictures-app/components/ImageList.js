@@ -1,11 +1,12 @@
 import React from 'react'
 import ImageShow from './ImageShow'
 
-function ImageList() {
+function ImageList({imageList}) {
     return (
         <>
-            <div>ImageList</div>
-            <ImageShow />
+            {imageList.map((image, index) => (
+                <ImageShow key={index} image={image} />
+            ))}
         </>
     )
 }
